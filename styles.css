@@ -1,0 +1,79 @@
+body {
+    background: rgb(15, 15, 15);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-image: url("background-1.png");
+    background-repeat:repeat-x;
+    background-size: cover;
+    height: 96vh; 
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+}
+
+h1 {
+    color: whitesmoke;
+    margin-left: 5%;
+    font-size: 10rem;
+    width: 50%;
+}
+
+#link-list {
+    position: absolute;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#link-list a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: whitesmoke;
+    line-height: 3;
+    font-size: 24px;
+    text-align: end;
+}
+
+#link-list a:hover {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: underline;
+    /*background-color: rgba(45, 43, 43, 0.495);*/
+    font-size: 26px;
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    padding: 0;
+    color: whitesmoke;
+    margin: 0;
+}
+
+/* Style the header links */
+.header a {
+    float: left;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Style the logo link */
+.header a.logo {
+    font-size: 12px;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones (600px or smaller) */
+    h1 {
+        width: 100%;
+        font-size: 4rem;
+    }
+}
+
